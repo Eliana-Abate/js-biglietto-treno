@@ -9,10 +9,10 @@ L'output del prezzo finale va stampato in forma umana (con massimo due decimali,
 
 //! Variabili 
 
-var userKm = prompt('Indica i chilometri da percorrere');
+var userKm = parseInt(prompt('Indica i chilometri da percorrere'));
 console.log(userKm);
 
-var userAge = prompt('Indica la tua età');
+var userAge = parseInt(prompt('Indica la tua età'));
 console.log(userAge);
 
 var costPerKm = 0.21;
