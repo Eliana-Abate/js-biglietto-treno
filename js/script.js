@@ -24,28 +24,23 @@ var discount20 = ((price * 20) / 100);
 
 var discount40 = ((price * 40) / 100);
 
-var result;
+var result = price;
 
-var totalPrice = result.toFixed(2);
 
 
 
 //! Condizioni
 if (userAge < 18 && userAge >= 0) {
 
-    result = (price - discount20); 
+    result = (result - discount20); 
 
 } else if (userAge > 65) {
 
-    result = (price - discount40);
-
-} else {
-
-    result = price;
+    result = (result - discount40);
 }
 
 
 //! Display
 var ticket = document.getElementById('ticket');
-ticket.innerHTML = 'Il costo del tuo biglietto è di: ' + totalPrice + ' Euro';
+ticket.innerHTML = 'Il costo del tuo biglietto è di: ' + result.toFixed(2) + ' Euro';
 
