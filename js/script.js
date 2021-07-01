@@ -26,6 +26,8 @@ var discount40 = ((price * 40) / 100);
 
 var result;
 
+var ticket;
+
 
 //! Condizioni
 if (userAge < 18 && userAge >= 0) {
@@ -36,7 +38,12 @@ if (userAge < 18 && userAge >= 0) {
 
     result = (price - discount40);
 
-} else (userAge >= 18 && userAge <= 65) {
+} else {
 
     result = price;
 }
+
+
+//! Display
+var ticket = document.getElementById('ticket');
+ticket.innerHTML = 'Il costo del tuo biglietto è di: ' + result + ' Euro';
