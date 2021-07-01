@@ -28,8 +28,15 @@ var result;
 
 
 //! Condizioni
+if (userAge < 18 && userAge >= 0) {
 
-if (userAge < 18 && userAge > 0) {
+    result = (price - discount20); 
 
-    
+} else if (userAge > 65) {
+
+    result = (price - discount40);
+
+} else (userAge >= 18 && userAge <= 65) {
+
+    result = price;
 }
