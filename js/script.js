@@ -9,10 +9,10 @@ L'output del prezzo finale va stampato in forma umana (con massimo due decimali,
 
 //! Variabili 
 
-var userKm = parseInt(prompt('Indica i chilometri da percorrere'));
+var userKm = prompt('Indica i chilometri da percorrere');
 console.log(userKm);
 
-var userAge = parseInt(prompt('Indica la tua età'));
+var userAge = prompt('Indica la tua età');
 console.log(userAge);
 
 var costPerKm = 0.21;
@@ -45,6 +45,9 @@ var ticket = document.getElementById('ticket');
 ticket.innerHTML = 'Il costo del tuo biglietto è di: ' + result.toFixed(2) + ' Euro';
 
 //! Validation
-if (isNaN(userKm) || isNaN(userAge) && userKm < 0) {
+if (isNaN(userKm) || isNaN(userAge)) {
     alert('Hai inserito valori non validi');
+
+  } else if (userKm < 0) {
+    alert('Inserire un numero di chilometri superiore a zero');
   }
