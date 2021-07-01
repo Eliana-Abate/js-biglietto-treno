@@ -44,3 +44,7 @@ if (userAge < 18 && userAge >= 0) {
 var ticket = document.getElementById('ticket');
 ticket.innerHTML = 'Il costo del tuo biglietto è di: ' + result.toFixed(2) + ' Euro';
 
+//! Validation
+if (isNaN(userKm) || isNaN(userAge) && userKm < 0) {
+    alert('Hai inserito valori non validi');
+  }
