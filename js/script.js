@@ -27,6 +27,15 @@ var discount40 = ((price * 40) / 100);
 var result = price;
 
 
+//! Validation
+if (isNaN(userKm) || isNaN(userAge)) {
+    alert('Hai inserito valori non validi');
+
+  } else if (userKm < 1) {
+    alert('Inserire un numero di chilometri pari o superiore a 1');
+  }
+
+
 
 
 //! Condizioni
@@ -44,10 +53,3 @@ if (userAge < 18 && userAge >= 0) {
 var ticket = document.getElementById('ticket');
 ticket.innerHTML = 'Il costo del tuo biglietto è di: ' + result.toFixed(2) + ' Euro';
 
-//! Validation
-if (isNaN(userKm) || isNaN(userAge)) {
-    alert('Hai inserito valori non validi');
-
-  } else if (userKm < 0) {
-    alert('Inserire un numero di chilometri superiore a zero');
-  }
