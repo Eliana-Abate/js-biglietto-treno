@@ -31,9 +31,9 @@ var result = price;
 if (isNaN(userKm) || isNaN(userAge)) {
     alert('Hai inserito valori non validi');
 
-  } else if (userKm < 1) {
+} else if (userKm < 1) {
     alert('Inserire un numero di chilometri pari o superiore a 1');
-  }
+}
 
 
 
