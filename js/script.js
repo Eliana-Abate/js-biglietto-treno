@@ -18,4 +18,18 @@ console.log(userAge);
 var costPerKm = 0.21;
 console.log(costPerKm);
 
-var price;
+var price = (userKm * costPerKm);
+
+var discount20 = ((price * 20) / 100);
+
+var discount40 = ((price * 40) / 100);
+
+var result;
+
+
+//! Condizioni
+
+if (userAge < 18 && userAge > 0) {
+
+    
+}
